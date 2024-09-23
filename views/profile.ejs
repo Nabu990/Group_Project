@@ -1,0 +1,8 @@
+<h2>Your Profile</h2>
+<p>Username: <%= user.username %></p>
+<p>Email: <%= user.email %></p>
+<% if (user.profile_photo) { %>
+  <img src="<%= user.profile_photo %>" alt="Profile Photo" width="100"><br>
+<% } else { %>
+  <p>No profile photo uploaded</p>
+<% } %>
